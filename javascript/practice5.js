@@ -71,51 +71,51 @@
 
 
 // -------------------------------------------------------------------------
-// let x=Number(window.prompt("Enter x: "));
-// let y=Number(window.prompt("Enter y: "));
-// let method=Number(window.prompt("Simple addition : 1\nSimple subtraction : 2\nSimple Multiplication: 3\nSimple division: 4"));
+let x=Number(window.prompt("Enter x: "));
+let y=Number(window.prompt("Enter y: "));
+let method=Number(window.prompt("Simple addition : 1\nSimple subtraction : 2\nSimple Multiplication: 3\nSimple division: 4"));
 
-// switch (method) {
-//     case 1:
-//         console.log(`${x} + ${y} = ${addition(x,y)}`);
-//         break;
-//     case 2:
-//         console.log(`${x} - ${y} = ${subtraction(x,y)}`);
-//         break;
-//     case 3:
-//         console.log(`${x} * ${y} = ${multiplication(x,y)}`);
-//         break;
-//     case 4:
-//         let ans=division(x,y);
-//         if (typeof ans=== 'String') {
-//             console.log(ans);
-//         }
-//         else{
-//             console.log(`${x} / ${y} = ${division(x.y)}`);
-//         }
-//         break;
+switch (method) {
+    case 1:
+        console.log(`${x} + ${y} = ${addition(x,y)}`);
+        break;
+    case 2:
+        console.log(`${x} - ${y} = ${subtraction(x,y)}`);
+        break;
+    case 3:
+        console.log(`${x} * ${y} = ${multiplication(x,y)}`);
+        break;
+    case 4:
+        let ans=division(x,y);
+        if (typeof ans=== 'String') {
+            console.log(ans);
+        }
+        else{
+            console.log(`${x} / ${y} = ${division(x.y)}`);
+        }
+        break;
 
-//     default:
-//         console.log("Wrong choice bro.");
-//         break;
-// }
-// function addition(x,y) {
-//     return x+y;
-// }
-// function subtraction(x,y) {
-//     return x-y;
-// }
-// function multiplication(x,y) {
-//     return x*y;
-// }
-// function division(x,y) {
-//     if (y===0) {
-//         return "y=0 can't divide"
-//     }
-//     else{
-//         return parseInt(x/y);
-//     }   
-// }
+    default:
+        console.log("Wrong choice bro.");
+        break;
+}
+function addition(x,y) {
+    return x+y;
+}
+function subtraction(x,y) {
+    return x-y;
+}
+function multiplication(x,y) {
+    return x*y;
+}
+function division(x,y) {
+    if (y===0) {
+        return "y=0 can't divide"
+    }
+    else{
+        return parseInt(x/y);
+    }   
+}
 // -------------------------------------------------------------------------
 
 // let x=Number(window.prompt("Enter number: "));
