@@ -1,0 +1,16 @@
+.red{
+    background-color: rgb(236, 108, 108);
+    color: black;
+    font-size: 5rem;
+}
+.blue{
+    background-color: rgb(132, 132, 230);
+    color: antiquewhite;
+    font-size: 8rem;
+}
+.btn{
+    background-color: rgb(208, 226, 43);
+    height: 4rem;
+    width: 8rem;
+    border-radius: 15px;
+}
