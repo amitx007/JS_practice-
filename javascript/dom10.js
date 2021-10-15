@@ -18,7 +18,7 @@ list.addEventListener('click',showBubling);
 conatainer.addEventListener('click',showBubling);
 function showBubling(eventobj) {
     console.log("BY USING A FUNCTION");
-    console.log("Current target: "+ eventobj.currentTarget);
-    console.log("Target: "+ eventobj.target);
+    console.log( eventobj.currentTarget);
+    console.log(eventobj.target);
     console.log("------------------------");
 }

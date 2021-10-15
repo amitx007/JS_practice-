@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    position: relative;
+    top: 7px;
+    text-align: center;
+}
+h1.borderx:after,h1.borderx::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    transition: width 0.5s linear;
+}
+h1.borderx::before{
+    left: 0px;
+    bottom: 0px;
+}
+h1.borderx::after{
+    right: 0px;
+    top: 0px;
+}
+h1.borderx:hover::before{
+    width: 100%;
+}
+h1.borderx:hover:after{
+    width: 100%;
+}
+.container{
+    margin: 1rem;
+    background-color: rgb(212, 212, 250);
+    width: 75vw;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 35rem;
+    border: 0.3rem solid rgb(54, 54, 54);
+    box-shadow: 3px 3px 20px ;
+    border-radius: 20px;
+    padding: 0.7rem;
+}
+.imgcontainer{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 100%;
+    background-image: url(person-1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    box-shadow: 3px 3px 20px ;
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.author{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+.job{
+    text-align: center;
+    padding: 5px;
+}
+.review{
+    border: 2px solid;
+    max-width: 30rem;
+    text-align: center;
+    padding: 2rem;
+}
+.btncontainer{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.back,.forward{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+.forward{
+    padding-left: 1.5rem;
+}
+.btn{
+    display: block;
+    margin-top:5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 2rem;
+    font-variant: small-caps;
+}
