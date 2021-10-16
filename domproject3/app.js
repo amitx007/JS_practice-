@@ -40,5 +40,5 @@ let forward=document.querySelector(".forward");
 let back=document.querySelector(".back");
 forward.addEventListener('click',function () {
     x++;
+    console.log(x);
 })
-console.log(x);
